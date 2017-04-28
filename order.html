@@ -3,39 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Login</title>
+  <title>Order</title>
+  <link rel="stylesheet" href="what_to_eat.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
   <script class="displayTemp" type="text/handlebars-x">
+
+    Hi {{person.firstName}} {{person.lastName}} you can afford.
+
     <table>
       {{#each meals}}
       <tr>
         <td>{{this.Price}}</td>
         <td><img style="height:100px;width:100px" src={{this.Picture}}></td>
         </tr>
-        {{/each}}
-
-        {{#each person}}
-        <td>{{this.name}}</td>
-        <td>{{this.lastName}}</td>
       </tr>
       {{/each}}
     </table>
   </script>
-  <!--<script class="userInfo" stype="text/handlebars-x">
-    <p>{{name}}</p>
-    <p>{{surname}}</p>
-  </script>-->
 </head>
 
 <body>
+  <h1><u>Delicious Burgers</u></h1>
   <input type="button" value="Menu" class="menubtn">
+  <br></br>
   <form>
-
-    First name:<br>
-    <input type="text" class="firstName">
-    <br> Last name:<br>
-    <input type="text" class="lastName">
-    <br> Input amount:<br>
+<input type="text" class="firstName" placeholder="Please enter your name">
+    <br></br>
+    <input type="text" class="lastName" placeholder="Please enter your surname">
+    <br></br>
     <input type="number" id="input" placeholder="Please enter amount">
 
     <br></br>
@@ -49,5 +44,5 @@
   </div>
 </body>
 <script src="what_to_eat.js" charset="utf-8"></script>
-
+<script src="what_to_eat.css" charset="utf-8"></script>
 </html>
