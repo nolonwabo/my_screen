@@ -1,0 +1,32 @@
+.mySlides
+{
+float: right;
+
+}
+h1
+{
+    font-size: 60px;
+
+    text-align: center;
+}
+.container
+{
+    margin-left: 70em;
+}
+.search{
+  padding-top: 10px;
+}
+.slideName{
+  font-size: 40px;
+  color: Red;
+}
+.order{
+  float: right;
+  border-radius: 10px;
+  border-color: Red;
+  width: 100px;
+  height: 50px;
+}
+body{
+  background-color: Pink;
+}

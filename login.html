@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.min.js"></script>
+  <script class="displayTemp" type="text/handlebars-x">
+    <table>
+      {{#each meals}}
+      <tr>
+        <td>{{this.Price}}</td>
+        <td><img style="height:100px;width:100px" src={{this.Picture}}></td>
+        </tr>
+        {{/each}}
+
+        {{#each person}}
+        <td>{{this.name}}</td>
+        <td>{{this.lastName}}</td>
+      </tr>
+      {{/each}}
+    </table>
+  </script>
+  <!--<script class="userInfo" stype="text/handlebars-x">
+    <p>{{name}}</p>
+    <p>{{surname}}</p>
+  </script>-->
+</head>
+
+<body>
+  <input type="button" value="Menu" class="menubtn">
+  <form>
+
+    First name:<br>
+    <input type="text" class="firstName">
+    <br> Last name:<br>
+    <input type="text" class="lastName">
+    <br> Input amount:<br>
+    <input type="number" id="input" placeholder="Please enter amount">
+
+    <br></br>
+    <input type="button" value="Submit" class="submit">
+  </form>
+  <p>Here are things you can order:</p>
+  <div class="output2">
+  </div>
+  <div class="output">
+
+  </div>
+</body>
+<script src="what_to_eat.js" charset="utf-8"></script>
+
+</html>
